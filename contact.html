@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+</head>
+
+<body>
+
+    <!--HEADER SECTION-->
+    <section>
+        <header>
+            <img src="" alt="">
+            <a href="home.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+        </header>
+    </section>
+
+    <!--CONTACT FORM SECTION-->
+    <section>
+        <h2>Contact Us</h2>
+        <form action="process-contact.php" method="post">
+        <fieldset>
+            <legend>Contact Information</legend>
+
+            <label for="firstName">First name:</label>
+            <input name="firstName" required >
+
+            <label for="lastName">Last name:</label>
+            <input name="lastName" required>
+
+            <label for="Email">Email:</label>
+            <input type="email" name="mail" placeholder="johndoe.@gmail.com" required>
+
+        </fieldset>
+
+        <fieldset>
+            <legend>Your Interests</legend>
+
+            <label for="checkbox">Category Interests</label>
+            <input type="checkbox" name="cb">
+
+            <label for="dropdown">Your Role</label>
+            <select name="dropdown">
+                <option value="Writer">Writer</option>
+                <option value="Contributor">Contributor</option>
+                <option value="Administrator">Administrator</option>
+            </select> 
+        </fieldset>
+
+        <input type="submit">
+    </section>
+
+    <!--FOOTER SECTION-->
+    <section>
+        <footer>
+            <p>This website uses cookies to improve your experiece, by clicking "accept cookies" you consent to our use
+                of cookies</p>
+            <a href="#">Accept Cookies</a>
+        </footer>
+    </section>
+</body>
+
+</html>
