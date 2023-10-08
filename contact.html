@@ -5,6 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact</title>
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+
 </head>
 
 <body>
@@ -23,35 +25,45 @@
     <section>
         <h2>Contact Us</h2>
         <form action="process-contact.php" method="post">
-        <fieldset>
-            <legend>Contact Information</legend>
+            <fieldset>
+                <legend>Contact Information</legend>
 
-            <label for="firstName">First name:</label>
-            <input name="firstName" required >
+                <label for="firstName">First name:</label>
+                <input name="firstName" required>
 
-            <label for="lastName">Last name:</label>
-            <input name="lastName" required>
+                <label for="lastName">Last name:</label>
+                <input name="lastName" required>
 
-            <label for="Email">Email:</label>
-            <input type="email" name="mail" placeholder="johndoe.@gmail.com" required>
+                <label for="Email">Email:</label>
+                <input type="email" name="mail" placeholder="johndoe.@gmail.com" required>
 
-        </fieldset>
+            </fieldset>
+            <!--CHECKBOXES-->
+            <fieldset>
+                <legend>Your Interests</legend>
 
-        <fieldset>
-            <legend>Your Interests</legend>
+                <input type="checkbox" name="Industry">
+                <label for="Industry">Career</Industry>
 
-            <label for="checkbox">Category Interests</label>
-            <input type="checkbox" name="cb">
+                    <input type="checkbox" name="Technical">
+                    <label for="Technical">Technical</label>
 
-            <label for="dropdown">Your Role</label>
-            <select name="dropdown">
-                <option value="Writer">Writer</option>
-                <option value="Contributor">Contributor</option>
-                <option value="Administrator">Administrator</option>
-            </select> 
-        </fieldset>
+                    <input type="checkbox" name="Career">
+                    <label for="Career">Career</label>
+            </fieldset>
 
-        <input type="submit">
+            <!--DROPDOWN-->
+            <fieldset>
+                <legend>Your Role</legend>
+
+                <select name="dropdown">
+                    <option value="Writer">Writer</option>
+                    <option value="Contributor">Contributor</option>
+                    <option value="Administrator">Administrator</option>
+                </select>
+            </fieldset>
+
+            <input type="submit">
     </section>
 
     <!--FOOTER SECTION-->
